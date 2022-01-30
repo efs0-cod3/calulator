@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background: rgb(248, 144, 106);
+    width: 100%;
+    text-align: center;
+
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px;
+    grid-template-areas:
+        "input input input input"
+        "cal-k cal-k cal-k cal-k"
+    ;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    
+}
+.calculator{
+    background-color: grey;
+    border: solid 10px grey;
+    border-radius: 10px;
+}
+
+/*===display===*/
+.screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: input;
+    width: 300px;
+    padding-right: 7px;
+    padding-top: 5px;
+    font-size: 52px;
+    min-height: 60px;
+    border: inset;
+    border-radius: 5px;
+    background-color: rgb(200, 255, 200);
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+/*===display===*/
+.calculator_keys {
+
+    grid-area: cal-k;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: 55px 58px 58px 60px 54px;
+    display: grid;
+    grid-template-areas:
+        "ac ac delete divide"
+        "n7 n8 n9 multi"
+        "n4 n5 n6 subs"
+        "n1 n2 n3 sum"
+        "n0 n0 point result"
+    ;
+}
+
+
+
+button {
+    border-radius: 5px;
+    align-items: center;
+    font-weight: bold;
+    background: whitesmoke;
+}
+button:hover{
+    background: lightgray;
+}
+
+
+/*=====Numbers Grid areas=====*/
+.ac {
+    grid-area: ac;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.n1 {
+    grid-area: n1;
+}
+
+.n2 {
+    grid-area: n2;
+}
+
+.n3 {
+    grid-area: n3;
+}
+
+.n4 {
+    grid-area: n4;
+}
+
+.n5 {
+    grid-area: n5;
+}
+
+.n6 {
+    grid-area: n6;
+}
+
+.n7 {
+    grid-area: n7;
+}
+
+.n8 {
+    grid-area: n8;
+}
+
+.n9 {
+    grid-area: n9;
+}
+
+.multiply {
+    grid-area: multi;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.substract {
+    grid-area: subs;
+}
+
+.add {
+    grid-area: sum;
+}
+
+.point {
+    grid-area: point;
+}
+
+.result {
+    grid-area: result;
+    background: rgb(248, 144, 106);
+}
+
+.result:hover {
+    background: rgb(189, 109, 80);
+}
+
+.n0 {
+    grid-area: n0;
+}

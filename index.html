@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div class="screen input" id="display">0</div>
+                <div class="calculator_keys">
+                    <button class="ac" data-action="clear">AC</button>
+                    <button class="delete" data-action="delete">Del</button>
+                    <button class="divide" data-operator>/</button>
+                    <button class="number n9" data-number>9</button>
+                    <button class="number n8" data-number>8</button>
+                    <button class="number n7" data-number>7</button>
+                    <button class="number n6" data-number>6</button>
+                    <button class="number n5" data-number>5</button>
+                    <button class="number n4" data-number>4</button>
+                    <button class="number n3" data-number>3</button>
+                    <button class="number n2" data-number>2</button>
+                    <button class="number n1" data-number>1</button>
+                    <button class="number n0" data-number>0</button>
+                    <button class="multiply" data-operator>x</button>
+                    <button class="subtract" data-operator>-</button>
+                    <button class="add" data-operator>+</button>
+                    <button class="result" id="equalBtn" data-action="calculate">=</button>
+                    <button class="point" id="pointBtn" data-action="decimal">.</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js" async defer></script>
+    <footer>© Erick 'Efs0-Cod3' Felix</footer>
+</body>
+
+</html>
